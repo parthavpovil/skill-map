@@ -14,6 +14,11 @@ func main(){
     c.JSON(200, gin.H{
       "message": "skill-map-home-page",
     })
+  	})
+	router.GET("/login", func(c *gin.Context) {
+    c.JSON(200, gin.H{
+      "message": "login required",
+    })
   })
   router.Run()
 }
